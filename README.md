@@ -1,6 +1,7 @@
 Treasure Hunt Game
 
 Overview
+
 This repository contains the Treasure Hunt Game, a grid-based interactive game implemented using Python's Tkinter library. Players can set treasures, adjust edge weights, and calculate the optimal path for collecting all treasures with minimal cost. The game supports both brute force and heuristic-based algorithms for pathfinding.
 
 Features
@@ -41,8 +42,8 @@ How to Play
 Grid Basics:
 The grid is a 10x10 matrix where nodes represent points connected by weighted edges.
 Treasures can be placed at nodes, and their values determine the priority of collection.
-Adding/Removing Treasures:
 
+Adding/Removing Treasures:
 Left-click on a node:
 If empty, a dialog prompts for the treasure value.
 If occupied, a confirmation dialog allows treasure removal.
@@ -73,23 +74,31 @@ Grid Setup:
 Randomly generates nodes, edges, and weights during initialization.
 
 Pathfinding:
+
 find_shortest_path(): Calculates the shortest path between two nodes using Dijkstra's algorithm.
+
 find_shortest_treasure_route(): Finds the optimal treasure-collecting path using the heuristic approach.
+
 brute_force_shortest_treasure_route(): Exhaustively evaluates all possible treasure-collecting paths.
 
 User Interaction:
+
 on_click(): Handles mouse clicks to add treasures or modify edge weights.
+
 recalculate_path(): Triggers the pathfinding algorithms based on user input.
 
 Visualization:
 Draws the grid, treasures, and paths dynamically.
 Animates the robot's movement along the calculated path.
 
-Future Enhancements
+Future Enhancements:
+
 Add more algorithms for pathfinding.
+
 Support larger grid sizes with dynamic scaling.
+
 Introduce additional game mechanics like obstacles or multiple robots.
 
 Author
+
 Rahul Reddy 
-Connect on LinkedIn
